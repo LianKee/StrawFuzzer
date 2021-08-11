@@ -1,0 +1,29 @@
+{
+    "skip_exist": true,
+    "skip_vuln": false,
+    "skip_to": null,
+    "skip_some": [
+        // Skip some fuzzing pairs
+        // ["[Signature for entry methods or *]", "[Signature for target methods or *]"], ...
+    ],
+    "only_some": [
+        // Only fuzzing on some fuzzing pairs
+        // ["[Signature for entry methods or *]", "[Signature for target methods or *]"], ...
+    ],
+    "only_interesting": false,
+
+    "static_infos": [
+        // output of static analyzer
+        // ["Path to output/*"]
+    ],
+    "difference_infos": [],
+
+    "summary": "",
+    "udid": "",
+    
+    "timeout": 300,
+    "exploreTime": -1,
+    "type": "StrawFuzzing",
+    "generate": false,
+    "hookless": false
+}

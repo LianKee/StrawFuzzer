@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Settings">
+
+        <EditTextPreference
+            android:defaultValue=""
+            android:key="filterUID"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Filter UID" />
+        <EditTextPreference
+            android:defaultValue=""
+            android:key="services"
+            android:selectAllOnFocus="true"
+            android:singleLine="false"
+            android:title="Services" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="disable_hook"
+            android:title="Disable Hook" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="disable_crash_hook"
+            android:title="Disable Crash Hook" />
+    </PreferenceCategory>
+</PreferenceScreen>

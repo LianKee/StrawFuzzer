@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">StrawFuzzer</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="title_activity_main">StrawFuzzer</string>
+
+    <string name="settings">Settings</string>
+    <string name="hookedmethods">HookedMethods</string>
+    <string name="title_activity_hooked_methods">HookedMethods</string>
+    <string name="strawfuzzer_device_server">StrawFuzzer Device Server</string>
+
+</resources>

@@ -1,0 +1,37 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile fileTree(dir:'lib',includes:['*jar'])
+
+//    testCompile group: 'org.projectlombok', name: 'lombok', version: '1.18.8'
+//    compile('ch.qos.logback:logback-core:1.2.3')
+//    compile('ch.qos.logback:logback-classic:1.2.3')
+
+//    testCompile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.25'
+}
+
+
+jar{
+    from {
+        configurations.runtime.collect{zipTree(it)}
+    }
+    manifest {
+        attributes 'Main-Class': 'main.Main'
+    }
+}
